@@ -44,7 +44,7 @@
    
 <!-- hero for blog -->
 <section>
-    <img class="hero-img" src="/images/undraw_contact_us_15o2.svg" alt="contact-us-svg">
+    <img class="hero-img" src="images/undraw_contact_us_15o2.svg" alt="contact-us-svg">
     <h1 class="hero-heading">Contact Me📱</h1>
     <h3 class="hero-heading-description"> Want to get in touch with me? Hit me up on LinkedIn, Twitter, Instagram or email. Let's learn together.</h3>
 </section>
@@ -91,5 +91,16 @@
         </li>
     </ul>
 </footer>
+<script>
+    document.onreadystatechange = function() {
+if (document.readyState !== "complete") {
+document.querySelector("body").style.visibility = "hidden";
+document.querySelector("#preloader").style.visibility = "visible";
+} else {
+document.querySelector("#preloader").style.display = "none";
+document.querySelector("body").style.visibility = "visible";
+}
+};
+</script>
 </body>
 </html>

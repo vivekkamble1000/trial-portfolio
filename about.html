@@ -11,7 +11,9 @@
     <script src="https://kit.fontawesome.com/8431ee0e2e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        
+    <div class="loader-wrapper">
+        <span id="preloader"></span>
+    </div>
     <!-- navigation bar -->
     <nav>
             <div class="brand">
@@ -85,6 +87,17 @@ I also have an affinity towards <span>video games🎮</span>,<span>graphic desig
             </li>
         </ul>
     </footer>
+    <script>
+        document.onreadystatechange = function() {
+if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#preloader").style.visibility = "visible";
+} else {
+    document.querySelector("#preloader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+}
+};
+    </script>
 </body>
 </html> 
   
