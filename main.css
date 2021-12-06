@@ -529,11 +529,11 @@ footer ul {
   padding-bottom: 50px;
 }
 @media only screen and (max-width: 600px) {
-  body { 
-  
+  body {
+  .video{
     margin: 0.5rem 0;
   min-width: 220px;
   width: 60%;
   padding: 0rem;
-  
-  }}
+  }
+  }
